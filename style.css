@@ -1,0 +1,192 @@
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*===============
+======== body====== */
+body{
+    font-family:'Poppins', sans-serif;
+}
+/* ============
+======container===== */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.banner{
+    display:flex;
+    height: 100vh;
+}
+.banner-left{
+    flex: 1;
+    display:flex;
+    align-items: center;
+    
+}
+.banner-right{
+    float:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:10%;
+}
+p{
+    margin-top:10px;
+}
+.primary-button{
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg, #c21273,#FF008E);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    margin-top: 10px;
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
+}
+.primary-button i{
+    margin-left:10px;
+    font-size:20px;
+}
+.banner-right img{
+    background-image: url('../img/Circle design.svg');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size:contain;
+    margin-left: 100px;
+}
+hr{
+    border:1px solid #D1D1D1;
+    margin-top:15%;
+}
+
+.banner-title{
+    font-size:59px;
+}
+.effect{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color:transparent;
+}
+.effect::before{
+    content: 'Influencer';
+    position: absolute;
+    top:0;
+    left: 0;
+    color:#eb5089;
+    animation:typing 3s linear infinite;
+}
+/* section */
+.margin-left{
+    margin-left: 45%;
+    font-size: 20px;
+}
+span{
+    color:#F7028A;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    margin-top:5%;
+    margin-left:5%
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+    padding-bottom: 20px;
+    
+}
+
+span{
+   color: #F7028A;
+
+}
+
+
+/* animation */
+@keyframes typing{
+    0%{
+        content:'I|';
+    }
+    8%{
+        content:'In|';
+    }
+    16%{
+        content:'Inf|';
+    }
+    24%{
+        content: 'Infl|';
+    }
+    32%{
+        content: 'Influe|';
+    }
+    40%{
+        content: 'Influen|';
+    }
+    48%{
+        content: 'Influenc|';
+    }
+    56%{
+        content: 'Influence|';
+    }
+    64%{
+        content: 'Influencer|';
+    }
+    
+    72%,
+    89%{
+        content: 'Influencer';
+    }
+    90%{
+        content: 'Influence|';
+    }
+    91%{
+        content: 'Influenc|';
+    }
+    92%{
+        content: 'Influen|';
+    }
+    93%{
+        content: 'Influe|';
+    94%{
+        content: 'Influ|';
+    }
+    94%{
+        content: 'Infl|';
+    }
+    95%{
+        content: 'Inf|';
+    }
+    96%{
+        content: 'In|';
+    }
+    97%{
+        content: 'I|';
+    }
+    98%{
+        content: '|';
+    }
+    99%{
+        content: '|';
+    }
+    
+}
